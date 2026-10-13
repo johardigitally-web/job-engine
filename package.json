@@ -1,0 +1,18 @@
+{
+  "name": "job-engine",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Finds remote and local job postings, scores them against your profile, checks they are still open, researches each company, and builds a ranked list you can submit in minutes.",
+  "license": "MIT",
+  "scripts": {
+    "scan": "node src/jobscan.mjs",
+    "scan:all": "node src/jobscan.mjs --all",
+    "scan:loose": "node src/jobscan.mjs --min=20",
+    "live": "node src/check-live.mjs",
+    "routes": "node src/find-apply-routes.mjs",
+    "list": "node src/build-worklist.mjs",
+    "audit": "node src/site-audit.mjs",
+    "daily": "node src/jobscan.mjs --quiet && node src/check-live.mjs --home && node src/build-worklist.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

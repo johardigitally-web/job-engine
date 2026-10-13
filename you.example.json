@@ -1,0 +1,36 @@
+{
+  "_comment": "Copy this to you.json and fill it in. you.json is gitignored and never leaves your machine.",
+
+  "name": "Your Name",
+  "email": "you@example.com",
+  "phone": "+00 000 0000000",
+  "linkedin": "https://www.linkedin.com/in/your-handle",
+  "website": "",
+
+  "location": {
+    "country": "Pakistan",
+    "city": "Lahore",
+    "timezone": "UTC+5",
+    "regions": ["south asia", "apac", "asia"],
+    "acceptOnsite": true,
+    "acceptRemote": true,
+    "hideRestricted": true
+  },
+
+  "cvFile": "assets/your-cv.pdf",
+  "cvUrl": "",
+
+  "rate": {
+    "hourly": "$20",
+    "monthly": "$1,500 full time"
+  },
+  "availability": "Immediately, 30+ hrs/week",
+
+  "provenNumbers": [
+    "A result you can evidence",
+    "Another one, with a real number in it"
+  ],
+  "neverSay": [
+    "Any claim you cannot back up if asked in an interview"
+  ]
+}

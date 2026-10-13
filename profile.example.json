@@ -1,0 +1,33 @@
+{
+  "_comment": "Copy to profile.json. This decides which postings score highly. Keys are case-insensitive regexes, values are points. A match in the job TITLE scores double.",
+
+  "score": {
+    "senior (software|backend) engineer": 30,
+    "\bpython\b|\bdjango\b|\bfastapi\b": 26,
+    "\bpostgres(ql)?\b|\bredis\b": 18,
+    "\bdocker\b|kubernetes|\bk8s\b": 16,
+    "\bAWS\b|\bGCP\b|terraform": 16,
+    "\bREST\b|\bAPI\b|microservice": 12,
+    "remote|distributed team": 10,
+    "contract|part[- ]time|retainer": 8
+  },
+
+  "penalty": {
+    "unpaid|equity only|commission only|profit share": -100,
+    "must relocate|on[- ]site only|hybrid role": -40,
+    "us only|usa only|citizens? only|security clearance": -60,
+    "staffing agency|recruitment agency": -25
+  },
+
+  "titlePenalty": {
+    "\bintern\b|internship": -30,
+    "director of|vice president|\bVP\b|chief": -15,
+    "sales|account manager|business development": -40
+  },
+
+  "mustMatchOne": "\bpython\b|\bdjango\b|backend|software engineer|\bAPI\b",
+
+  "minScore": 30,
+  "maxAgeDays": 21,
+  "digestTop": 25
+}

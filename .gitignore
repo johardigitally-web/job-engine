@@ -1,0 +1,11 @@
+# Your identity and tuning. Never commit these.
+you.json
+profile.json
+
+# Everything the engine generates about your search.
+state/
+out/
+assets/
+applications/
+node_modules/
+*.log
